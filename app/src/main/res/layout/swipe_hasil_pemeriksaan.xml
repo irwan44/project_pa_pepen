@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:behavior_hideable="false"
+    app:circularflow_defaultRadius="10dp"
+    app:behavior_peekHeight="45dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+<androidx.cardview.widget.CardView
+    android:layout_width="50dp"
+    android:layout_height="6dp"
+    app:cardBackgroundColor="@color/teal_700"
+    android:layout_gravity="center"
+    app:cardCornerRadius="20dp">
+
+</androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bariol_bold"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="Pilih Hasil Pemeriksaan">
+
+        </TextView>
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="361dp"
+        android:layout_height="118dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:onClick="labo"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardBackgroundColor="#49A0AE"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/asset_1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/bariol_bold"
+            android:gravity="center"
+            android:text="Hasil Pemeriksaan Laboratorium"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_hasil_radio"
+        android:layout_width="361dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        app:cardElevation="5dp"
+        android:onClick="rado"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardBackgroundColor="#4ABC96"
+        app:cardCornerRadius="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/asset_2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/bariol_bold"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/white"
+            android:text="Hasil Pemeriksaan Radiologi"
+            android:textSize="20dp">
+
+        </TextView>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:orientation="vertical"
+        android:padding="5dp" />
+
+        </LinearLayout>

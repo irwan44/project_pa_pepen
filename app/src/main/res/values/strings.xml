@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">project_pa_pepen</string>
+    <string name="detail_akun">Detail Akun</string>
+    <string name="irwan_setiawan_n_325345_20_desember_1998_nchest_amp_all_n_2022_14_05_22_10_15_05_nproyeksi_1_n_non_hospital_fuji_film_corporation_acc41p3327_nsrs_1001_img_1001"><![CDATA[Irwan Setiawan \n 325345, 20 Desember 1998 \nChest & All \n 2022. 14-05-22, 10:15:05 \nProyeksi 1 \n\nOn Hospital FUJI FILM Corporation ACC41P3327 \nSrs 1001 img 1001]]></string>
+    <string-array name="siswa">
+        <item>Dokter Gigi</item>
+        <item>Psikolog</item>
+        <item>Spesialis Anak</item>
+        <item>Spesialis Bedah</item>
+        <item>Spesialis Gizi</item>
+        <item>Spesialis Bedah Syaraf</item>
+        <item>Spesialis Bedah Plastik</item>
+        <item>Dokter Umum</item>
+    </string-array>
+</resources>

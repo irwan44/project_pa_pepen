@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainJadwalOnlineSelect">
+
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:id="@+id/pg_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/bariol_bold"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:text="Jadwal Online"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:onClick="back"
+                    app:navigationIcon="@drawable/icon_left"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        app:layout_constraintTop_toBottomOf="@+id/pg_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_height="580dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    app:cardBackgroundColor="@color/teal_200"
+                    android:layout_height="32dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/bariol_bold"
+                        android:text="Detail Dokter">
+
+                    </TextView>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_height="match_parent">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="match_parent"
+                        android:src="@drawable/nurse_svgrepo_com"
+                        android:layout_marginTop="60dp"
+                        android:layout_height="90dp"/>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/bariol_bold"
+                    android:text="Nama Dokter :"
+                    android:textSize="18dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="7dp"
+                    app:cardBackgroundColor="#EEEEEE"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dr.Irwan Setiawan"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bariol_bold"
+                        android:layout_marginLeft="10dp"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/bariol_bold"
+                    android:text="Spesialisasi :"
+                    android:textSize="18dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="7dp"
+                    app:cardBackgroundColor="#EEEEEE"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Penyakit Dalam"
+                        android:fontFamily="@font/bariol_bold"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"/>
+
+                </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/bariol_bold"
+                        android:text="Jadwal :"
+                        android:textSize="18dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="20dp"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="7dp"
+                    app:cardBackgroundColor="#EEEEEE"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <GridLayout
+                        android:id="@+id/GridPasien"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:columnCount="3"
+                        android:rowCount="6">
+
+                    <!--        ROW 1 UMUR-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="0.5"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:fontFamily="@font/bariol_bold"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Senin"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingStart="9dp"
+                        android:paddingEnd="9dp"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:text=":"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/txt_umurPasien"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="0.5"
+                        android:padding="5dp"
+                        android:fontFamily="@font/bariol_bold"
+                        android:layout_row="0"
+                        android:layout_column="2"
+                        android:textStyle="bold"/>
+
+                    <!--        ROW 2 GOL. DARAH-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="0.5"
+                        android:layout_row="1"
+                        android:layout_column="0"
+                        android:paddingTop="5dp"
+                        android:fontFamily="@font/bariol_bold"
+                        android:paddingBottom="5dp"
+                        android:text="Selasa"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingStart="9dp"
+                        android:paddingEnd="9dp"
+                        android:layout_row="1"
+                        android:layout_column="1"
+                        android:text=":"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/txt_golDarah"
+                        android:layout_width="wrap_content"
+                        android:fontFamily="@font/bariol_bold"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="0.5"
+                        android:padding="5dp"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:textStyle="bold"/>
+
+                    <!--        ROW 3 Jenis Kelamin-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="0.5"
+                        android:layout_row="2"
+                        android:layout_column="0"
+                        android:paddingTop="5dp"
+                        android:fontFamily="@font/bariol_bold"
+                        android:paddingBottom="5dp"
+                        android:text="Rabu"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingStart="9dp"
+                        android:paddingEnd="9dp"
+                        android:layout_row="2"
+                        android:layout_column="1"
+                        android:text=":"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/txt_jekelPasien"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="0.5"
+                        android:padding="5dp"
+                        android:fontFamily="@font/bariol_bold"
+                        android:layout_row="2"
+                        android:layout_column="2"
+                        android:textStyle="bold"/>
+
+                    <!--        ROW 4 ALERGI-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="0.5"
+                        android:layout_row="3"
+                        android:layout_column="0"
+                        android:fontFamily="@font/bariol_bold"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Kamis"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingStart="9dp"
+                        android:paddingEnd="9dp"
+                        android:layout_row="3"
+                        android:layout_column="1"
+                        android:text=":"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/txt_alergi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="0.5"
+                        android:padding="5dp"
+                        android:fontFamily="@font/bariol_bold"
+                        android:layout_row="3"
+                        android:layout_column="2"
+                        android:text="08:30 AM - 10/11/2022"
+                        android:textStyle="bold"/>
+
+                    <!--        ROW 5 No. HP-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="0.5"
+                        android:layout_row="4"
+                        android:layout_column="0"
+                        android:paddingTop="5dp"
+                        android:fontFamily="@font/bariol_bold"
+                        android:paddingBottom="5dp"
+                        android:text="Jumat"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingStart="9dp"
+                        android:paddingEnd="9dp"
+                        android:layout_row="4"
+                        android:layout_column="1"
+                        android:text=":"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/txt_nohp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="0.5"
+                        android:padding="5dp"
+                        android:fontFamily="@font/bariol_bold"
+                        android:layout_row="4"
+                        android:layout_column="2"
+                        android:text="08:30 AM - 11/11/2022"
+                        android:textStyle="bold"/>
+                    </GridLayout>
+                </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_height="580dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    app:cardBackgroundColor="@color/teal_200"
+                    android:layout_height="32dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/bariol_bold"
+                        android:text="Detail Dokter">
+
+                    </TextView>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="match_parent"
+                        android:src="@drawable/nurse_svgrepo_com"
+                        android:layout_marginTop="60dp"
+                        android:layout_height="90dp"/>
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/bariol_bold"
+                        android:text="Nama Dokter :"
+                        android:textSize="18dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        app:cardElevation="0dp"
+                        app:cardCornerRadius="7dp"
+                        app:cardBackgroundColor="#EEEEEE"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Dr.Irwan Setiawan"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/bariol_bold"
+                            android:layout_marginLeft="10dp"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/bariol_bold"
+                        android:text="Spesialisasi :"
+                        android:textSize="18dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        app:cardElevation="0dp"
+                        app:cardCornerRadius="7dp"
+                        app:cardBackgroundColor="#EEEEEE"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Penyakit Dalam"
+                            android:fontFamily="@font/bariol_bold"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/bariol_bold"
+                        android:text="Jadwal :"
+                        android:textSize="18dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:layout_marginTop="20dp"
+                        app:cardElevation="0dp"
+                        app:cardCornerRadius="7dp"
+                        app:cardBackgroundColor="#EEEEEE"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+
+                        <GridLayout
+                            android:id="@+id/GridPasien"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:columnCount="3"
+                            android:rowCount="6">
+
+                            <!--        ROW 1 UMUR-->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="0.5"
+                                android:layout_row="0"
+                                android:layout_column="0"
+                                android:fontFamily="@font/bariol_bold"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:text="Senin"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:paddingStart="9dp"
+                                android:paddingEnd="9dp"
+                                android:layout_row="0"
+                                android:layout_column="1"
+                                android:text=":"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/txt_umurPasien"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="0.5"
+                                android:padding="5dp"
+                                android:fontFamily="@font/bariol_bold"
+                                android:layout_row="0"
+                                android:layout_column="2"
+                                android:textStyle="bold"/>
+
+                            <!--        ROW 2 GOL. DARAH-->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="0.5"
+                                android:layout_row="1"
+                                android:layout_column="0"
+                                android:paddingTop="5dp"
+                                android:fontFamily="@font/bariol_bold"
+                                android:paddingBottom="5dp"
+                                android:text="Selasa"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:paddingStart="9dp"
+                                android:paddingEnd="9dp"
+                                android:layout_row="1"
+                                android:layout_column="1"
+                                android:text=":"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/txt_golDarah"
+                                android:layout_width="wrap_content"
+                                android:fontFamily="@font/bariol_bold"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="0.5"
+                                android:padding="5dp"
+                                android:layout_row="1"
+                                android:layout_column="2"
+                                android:textStyle="bold"/>
+
+                            <!--        ROW 3 Jenis Kelamin-->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="0.5"
+                                android:layout_row="2"
+                                android:layout_column="0"
+                                android:paddingTop="5dp"
+                                android:fontFamily="@font/bariol_bold"
+                                android:paddingBottom="5dp"
+                                android:text="Rabu"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:paddingStart="9dp"
+                                android:paddingEnd="9dp"
+                                android:layout_row="2"
+                                android:layout_column="1"
+                                android:text=":"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/txt_jekelPasien"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="0.5"
+                                android:padding="5dp"
+                                android:fontFamily="@font/bariol_bold"
+                                android:layout_row="2"
+                                android:layout_column="2"
+                                android:textStyle="bold"/>
+
+                            <!--        ROW 4 ALERGI-->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="0.5"
+                                android:layout_row="3"
+                                android:layout_column="0"
+                                android:fontFamily="@font/bariol_bold"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:text="Kamis"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:paddingStart="9dp"
+                                android:paddingEnd="9dp"
+                                android:layout_row="3"
+                                android:layout_column="1"
+                                android:text=":"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/txt_alergi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="0.5"
+                                android:padding="5dp"
+                                android:fontFamily="@font/bariol_bold"
+                                android:layout_row="3"
+                                android:layout_column="2"
+                                android:text="08:30 AM - 10/11/2022"
+                                android:textStyle="bold"/>
+
+                            <!--        ROW 5 No. HP-->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="0.5"
+                                android:layout_row="4"
+                                android:layout_column="0"
+                                android:paddingTop="5dp"
+                                android:fontFamily="@font/bariol_bold"
+                                android:paddingBottom="5dp"
+                                android:text="Jumat"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:paddingStart="9dp"
+                                android:paddingEnd="9dp"
+                                android:layout_row="4"
+                                android:layout_column="1"
+                                android:text=":"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="0.5"
+                                android:padding="5dp"
+                                android:fontFamily="@font/bariol_bold"
+                                android:layout_row="4"
+                                android:layout_column="2"
+                                android:text="08:30 AM - 11/11/2022"
+                                android:textStyle="bold"/>
+                        </GridLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

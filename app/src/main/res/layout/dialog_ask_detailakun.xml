@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="209dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/transparan"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="251dp"
+        android:background="@drawable/bg_white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="37dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/icon_multiply"
+            android:src="@drawable/icon_multiply"
+            android:translationY="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="20sp"
+            android:fontFamily="@font/bariol_bold"
+            android:gravity="center"
+            android:text="Mohon dilengkapi apabila terdapat data \nyang belum tercatat dalam sistem kami."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <!-- <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="90dp"
+                android:background="@drawable/border_red_1"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="actLogin"
+                android:fontFamily="@font/bariol_bold"
+                android:text="YA"
+                android:textColor="#FD7B7B"
+                android:textStyle="bold" />-->
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/border_black_1"
+                android:fontFamily="@font/bariol_bold"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="actLogout"
+                android:text="OK"
+                android:textColor="#868686"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </LinearLayout>
+
+</LinearLayout>

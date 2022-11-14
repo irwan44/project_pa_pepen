@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="209dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/transparan"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/bg_white"
+        android:orientation="vertical"
+        android:paddingBottom="15dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="37dp"
+            android:layout_height="35dp"
+            android:background="@drawable/icon_multiply"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_multiply"
+            android:translationY="20dp">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="20sp"
+            android:fontFamily="@font/bariol_bold"
+            android:gravity="center"
+            android:text="Apakah Anda sudah pernah terdaftar \nsebagai pasien di salah satu rumah sakit kami ?"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:gravity="center"
+            android:layout_marginBottom="25dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_ya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="90dp"
+                android:background="@drawable/border_red_1"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="actLogin"
+                android:fontFamily="@font/bariol_bold"
+                android:text="YA"
+                android:textColor="#FD7B7B"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_tidak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/border_black_1"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="actLogout"
+                android:fontFamily="@font/bariol_bold"
+                android:text="TIDAK"
+                android:textColor="#868686"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </LinearLayout>
+
+</LinearLayout>

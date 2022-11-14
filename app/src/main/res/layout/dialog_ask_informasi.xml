@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="209dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/transparan"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/bg_white"
+        android:orientation="vertical"
+        android:paddingBottom="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Informasi"
+            android:gravity="center"
+            android:fontFamily="@font/bariol_bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="230dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="37dp"
+            android:layout_height="35dp"
+            android:background="@drawable/icon_multiply"
+            android:layout_gravity="right"
+            android:src="@drawable/icon_multiply"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="20sp"
+            android:fontFamily="@font/bariol_bold"
+            android:gravity="center"
+            android:text="Akun Anda belum tersambung dengan data \npasien di Hostpital merdeka Kartika. \nApakah Anda pernah terdaftar menjadi pasien \ndi Hostpital merdeka Kartika ?"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:gravity="center"
+            android:layout_marginBottom="25dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_ya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="90dp"
+                android:background="@drawable/border_red_1"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="actLogin"
+                android:fontFamily="@font/bariol_bold"
+                android:text="YA"
+                android:textColor="#FD7B7B"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_belumpernah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/border_black_1"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="actLogout"
+                android:fontFamily="@font/bariol_bold"
+                android:text="Belum Pernah"
+                android:textAllCaps="false"
+                android:textColor="#868686"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </LinearLayout>
+
+</LinearLayout>
