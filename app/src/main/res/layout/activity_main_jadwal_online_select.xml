@@ -75,7 +75,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    app:cardBackgroundColor="@color/teal_200"
+                    app:cardBackgroundColor="#01AEBF"
                     android:layout_height="32dp">
 
                     <TextView
@@ -400,7 +400,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    app:cardBackgroundColor="@color/teal_200"
+                    app:cardBackgroundColor="#01AEBF"
                     android:layout_height="32dp">
 
                     <TextView

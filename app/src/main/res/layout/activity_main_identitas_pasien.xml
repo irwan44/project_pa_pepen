@@ -442,7 +442,7 @@
                 app:cardCornerRadius="10dp"
                 app:cardElevation="10dp"
                 android:onClick="Login"
-                app:cardBackgroundColor="@color/teal_200"
+                app:cardBackgroundColor="#01AEBF"
                 android:layout_gravity="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
