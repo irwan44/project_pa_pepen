@@ -13,6 +13,13 @@
         android:theme="@style/Theme.Project_pa_pepen"
         tools:targetApi="31">
         <activity
+            android:name=".MainProfile"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".MainAntrian"
             android:exported="false">
             <meta-data

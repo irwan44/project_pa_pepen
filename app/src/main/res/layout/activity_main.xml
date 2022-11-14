@@ -59,9 +59,7 @@
                         android:layout_height="51dp"
                         android:layout_marginTop="15dp"
                         android:layout_marginEnd="15dp"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:foreground="?attr/selectableItemBackground"
+                        android:onClick="profile"
                         android:src="@drawable/nurse_svgrepo_com"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />

@@ -105,6 +105,10 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(MainActivity.this, MainAntrian.class);
         startActivity(i);
     }
+    public void profile (View view) {
+        Intent i = new Intent(MainActivity.this, MainProfile.class);
+        startActivity(i);
+    }
 
     @Override
     public void onBackPressed() {
