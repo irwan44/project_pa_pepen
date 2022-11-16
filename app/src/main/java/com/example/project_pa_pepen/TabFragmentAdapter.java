@@ -31,8 +31,8 @@ public class TabFragmentAdapter extends FragmentPagerAdapter {
         return fragmentTitleList.get(position);
     }
 
-    public void addFragment(FragmentTwo fragment, String title) {
-        fragmentList.add(fragment);
+    public void addFragment(FragmentThree fragmentOne, String title) {
+        fragmentList.add(fragmentOne);
         fragmentTitleList.add(title);
     }
 }

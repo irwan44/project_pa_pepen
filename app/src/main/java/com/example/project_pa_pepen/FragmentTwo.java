@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment;
 public class FragmentTwo extends Fragment {
 
     public static FragmentTwo newInstance() {
+
         return new FragmentTwo();
     }
 

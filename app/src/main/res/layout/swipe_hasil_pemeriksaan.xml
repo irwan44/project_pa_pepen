@@ -51,6 +51,7 @@
 
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/btn_hasil"
         android:layout_width="361dp"
         android:layout_height="118dp"
         android:layout_gravity="center"

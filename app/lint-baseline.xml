@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 7.3.0" type="baseline" client="gradle" dependencies="false" name="AGP (7.3.0)" variant="fatal" version="7.3.0">
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/textView4`, already defined earlier in this layout"
+        errorLine1="                        android:id=&quot;@+id/textView4&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main_jadwal_online_select.xml"
+            line="432"
+            column="25"/>
+        <location
+            file="src/main/res/layout/activity_main_jadwal_online_select.xml"
+            line="110"
+            column="21"
+            message="Duplicate id `@+id/textView4` originally defined here"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/GridPasien`, already defined earlier in this layout"
+        errorLine1="                            android:id=&quot;@+id/GridPasien&quot;"
+        errorLine2="                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main_jadwal_online_select.xml"
+            line="527"
+            column="29"/>
+        <location
+            file="src/main/res/layout/activity_main_jadwal_online_select.xml"
+            line="205"
+            column="25"
+            message="Duplicate id `@+id/GridPasien` originally defined here"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/txt_umurPasien`, already defined earlier in this layout"
+        errorLine1="                                android:id=&quot;@+id/txt_umurPasien&quot;"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main_jadwal_online_select.xml"
+            line="561"
+            column="33"/>
+        <location
+            file="src/main/res/layout/activity_main_jadwal_online_select.xml"
+            line="239"
+            column="25"
+            message="Duplicate id `@+id/txt_umurPasien` originally defined here"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/txt_golDarah`, already defined earlier in this layout"
+        errorLine1="                                android:id=&quot;@+id/txt_golDarah&quot;"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main_jadwal_online_select.xml"
+            line="595"
+            column="33"/>
+        <location
+            file="src/main/res/layout/activity_main_jadwal_online_select.xml"
+            line="273"
+            column="25"
+            message="Duplicate id `@+id/txt_golDarah` originally defined here"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/txt_jekelPasien`, already defined earlier in this layout"
+        errorLine1="                                android:id=&quot;@+id/txt_jekelPasien&quot;"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main_jadwal_online_select.xml"
+            line="629"
+            column="33"/>
+        <location
+            file="src/main/res/layout/activity_main_jadwal_online_select.xml"
+            line="307"
+            column="25"
+            message="Duplicate id `@+id/txt_jekelPasien` originally defined here"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/txt_alergi`, already defined earlier in this layout"
+        errorLine1="                                android:id=&quot;@+id/txt_alergi&quot;"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main_jadwal_online_select.xml"
+            line="663"
+            column="33"/>
+        <location
+            file="src/main/res/layout/activity_main_jadwal_online_select.xml"
+            line="341"
+            column="25"
+            message="Duplicate id `@+id/txt_alergi` originally defined here"/>
+    </issue>
+
+</issues>

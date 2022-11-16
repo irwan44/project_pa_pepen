@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#F8F8F8"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -23,6 +24,7 @@
                 android:id="@+id/pg_toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="72dp"
+                android:layout_marginTop="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -74,15 +76,15 @@
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="337dp"
+                    android:layout_width="377dp"
                     android:layout_height="231dp"
                     android:layout_gravity="center"
                     android:clickable="true"
                     android:focusable="true"
                     android:foreground="?attr/selectableItemBackground"
                     android:onClick="antrian"
-                    app:cardCornerRadius="20dp"
-                    app:cardElevation="10dp">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="1dp">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -115,22 +117,22 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="136dp"
+                android:layout_height="116dp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/btn_hasil_pemeriksaan"
                     android:layout_width="163dp"
-                    android:layout_height="80dp"
+                    android:layout_height="100dp"
                     android:layout_gravity="center"
                     android:clickable="true"
                     android:focusable="true"
                     android:foreground="?attr/selectableItemBackground"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="15dp"
-                    app:cardCornerRadius="20dp"
-                    app:cardElevation="10dp">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
 
 
                     <TextView
@@ -154,15 +156,15 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="163dp"
-                    android:layout_height="80dp"
+                    android:layout_height="100dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:clickable="true"
                     android:focusable="true"
                     android:foreground="?attr/selectableItemBackground"
                     android:onClick="Pendaftran"
-                    app:cardCornerRadius="20dp"
-                    app:cardElevation="10dp">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
 
                     <TextView
                         android:layout_width="114dp"
@@ -187,13 +189,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="136dp"
+                android:layout_height="116dp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="163dp"
-                    android:layout_height="80dp"
+                    android:layout_height="100dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:clickable="true"
@@ -201,8 +203,8 @@
                     android:foreground="?attr/selectableItemBackground"
                     android:layout_marginRight="15dp"
                     android:onClick="infokamar"
-                    app:cardCornerRadius="20dp"
-                    app:cardElevation="10dp">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
 
                     <TextView
                         android:layout_width="114dp"
@@ -225,15 +227,15 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="163dp"
-                    android:layout_height="80dp"
+                    android:layout_height="100dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:onClick="jadwalonline"
                     android:clickable="true"
                     android:focusable="true"
                     android:foreground="?attr/selectableItemBackground"
-                    app:cardCornerRadius="20dp"
-                    app:cardElevation="10dp">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
 
                     <TextView
                         android:layout_width="114dp"
@@ -258,13 +260,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="136dp"
+                android:layout_height="116dp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="163dp"
-                    android:layout_height="80dp"
+                    android:layout_height="100dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:clickable="true"
@@ -272,8 +274,8 @@
                     android:foreground="?attr/selectableItemBackground"
                     android:layout_marginRight="15dp"
                     android:onClick="info"
-                    app:cardCornerRadius="20dp"
-                    app:cardElevation="10dp">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
 
                     <TextView
                         android:layout_width="114dp"
@@ -297,14 +299,14 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/btn_summary"
                     android:layout_width="163dp"
-                    android:layout_height="80dp"
+                    android:layout_height="100dp"
                     android:clickable="true"
                     android:focusable="true"
                     android:foreground="?attr/selectableItemBackground"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
-                    app:cardCornerRadius="20dp"
-                    app:cardElevation="10dp">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
 
                     <TextView
                         android:layout_width="114dp"
@@ -337,8 +339,8 @@
                     android:layout_width="337dp"
                     android:layout_height="131dp"
                     android:layout_gravity="center"
-                    app:cardCornerRadius="20dp"
-                    app:cardElevation="10dp">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="1dp">
 
                     <TextView
                         android:layout_width="wrap_content"

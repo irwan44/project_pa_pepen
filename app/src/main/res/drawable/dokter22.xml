@@ -5,10 +5,10 @@
     android:viewportHeight="2000">
   <path
       android:pathData="M0,0h2800v2000h-2800z"
-      android:fillColor="#4763b5"/>
+      />
   <path
       android:pathData="M2800,2000l-2800,0l2800,-2000l0,2000z"
-      android:fillColor="#4772b5"/>
+      />
   <path
       android:pathData="M752,1031.3c-3.3,1 -6.8,1.1 -10.1,0.4 0.9,-5.1 1.9,-10.2 3,-15.3 1,0.3 1.9,1 2.8,1.7 1.5,1.2 3.1,2.5 3.8,4.3 0.3,0.7 0.3,1.3 0.3,2 -0.1,1 0.2,2.1 0.2,3.1 0,0.6 0.1,1.3 0.1,2 0,0.2 0.1,1.8 -0.1,1.9Z"
       android:fillColor="#5496d1"

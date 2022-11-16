@@ -35,7 +35,7 @@ public class MainInfo extends AppCompatActivity {
         //Set up the view pager and fragments
         TabFragmentAdapter adapter = new TabFragmentAdapter(getSupportFragmentManager());
         adapter.addFragment(FragmentOne.newInstance(), "Tentang \nKami");
-        adapter.addFragment(FragmentTwo.newInstance(), "Fasilitas & Pelayanan");
+        adapter.addFragment(FragmentOne.newInstance(), "Fasilitas & Pelayanan");
         mViewPager.setAdapter(adapter);
         mTabs.setupWithViewPager(mViewPager);
 

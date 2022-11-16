@@ -11,8 +11,8 @@ import androidx.fragment.app.Fragment;
 
 public class FragmentThree extends Fragment {
 
-    public static FragmentThree newInstance() {
-        return new FragmentThree();
+    public static FragmentOne newInstance() {
+        return new FragmentOne();
     }
 
     @Nullable

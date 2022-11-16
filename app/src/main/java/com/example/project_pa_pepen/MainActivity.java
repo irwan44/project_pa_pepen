@@ -34,7 +34,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btn_pemeriksaan = findViewById(R.id.btn_hasil_pemeriksaan);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+        }
+
+            btn_pemeriksaan = findViewById(R.id.btn_hasil_pemeriksaan);
         btn_summary = findViewById(R.id.btn_summary);
 
 

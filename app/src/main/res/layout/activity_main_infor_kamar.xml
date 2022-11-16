@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F8F8F8"
     tools:context=".MainInforKamar">
 
 
@@ -102,7 +103,7 @@
                             android:layout_marginTop="16dp"
                             android:layout_marginEnd="10dp"
                             app:cardCornerRadius="10dp"
-                            app:cardElevation="20dp"
+                            app:cardElevation="1dp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
@@ -112,6 +113,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:scaleType="fitXY"
+                                android:src="@drawable/room2"
                                 tools:ignore="MissingConstraints" />
 
                             <androidx.constraintlayout.widget.ConstraintLayout
@@ -301,7 +303,7 @@
                             android:layout_marginTop="20dp"
                             android:layout_marginEnd="10dp"
                             app:cardCornerRadius="10dp"
-                            app:cardElevation="20dp"
+                            app:cardElevation="1dp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/cardView3"
@@ -311,6 +313,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:scaleType="fitXY"
+                                android:src="@drawable/room3"
                                 tools:ignore="MissingConstraints" />
 
                             <androidx.constraintlayout.widget.ConstraintLayout
@@ -498,7 +501,7 @@
                             android:layout_marginTop="20dp"
                             android:layout_marginEnd="10dp"
                             app:cardCornerRadius="10dp"
-                            app:cardElevation="20dp"
+                            app:cardElevation="1dp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/cardView4"
@@ -508,6 +511,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:scaleType="fitXY"
+                                android:src="@drawable/room1"
                                 tools:ignore="MissingConstraints" />
 
                             <androidx.constraintlayout.widget.ConstraintLayout
