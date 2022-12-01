@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainLogin">
 
     <androidx.core.widget.NestedScrollView
@@ -63,7 +64,6 @@
         android:layout_marginEnd="45dp"
         android:fontFamily="@font/bariol_bold"
         app:endIconMode="clear_text"
-        android:textColorHint="@color/white"
         android:background="@drawable/user"
         app:helperText="Masukkan email / No. HP anda"
         app:layout_constraintEnd_toEndOf="parent"
@@ -91,11 +91,10 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="45dp"
         android:background="@drawable/password"
-        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_username1"
-        app:passwordToggleEnabled="true">
+        app:passwordToggleEnabled="false">
 
         <EditText
             android:id="@+id/txt_password"

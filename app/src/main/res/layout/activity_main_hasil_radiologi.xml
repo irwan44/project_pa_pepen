@@ -19,7 +19,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            app:cardBackgroundColor="#01AEBF"
+            app:cardBackgroundColor="#0EBE7F"
             android:layout_height="match_parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -71,7 +71,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:gravity="center"
-                android:background="#01AEBF">
+                android:background="#0EBE7F">
 
                 <ImageView
                     android:layout_width="200dp"
@@ -84,15 +84,17 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="550dp"
+                android:layout_height="430dp"
                 android:translationY="-85dp"
                 app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/white"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 app:cardCornerRadius="20dp">
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    app:cardBackgroundColor="#01AEBF"
+                    app:cardBackgroundColor="#0EBE7F"
                     android:layout_height="52dp">
 
                     <TextView
@@ -114,27 +116,25 @@
                     android:layout_height="wrap_content">
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="225dp"
-                        android:layout_height="170dp"
-                        android:layout_marginStart="10dp"
+                        android:layout_width="325dp"
+                        android:layout_height="169dp"
                         android:layout_marginTop="72dp"
-                        android:layout_marginEnd="10dp"
-                        app:cardBackgroundColor="#01AEBF"
+                        app:cardBackgroundColor="#F2F1F6"
                         app:cardCornerRadius="6dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
 
-                      <TextView
-                          android:layout_width="match_parent"
-                          android:layout_height="match_parent"
-                          android:layout_marginBottom="10dp"
-                          android:layout_marginTop="10dp"
-                          android:layout_marginRight="10dp"
-                          android:layout_marginLeft="10dp"
-                          android:fontFamily="@font/bariol_bold"
-                          android:textColor="@color/white"
-                          android:text="@string/irwan_setiawan_n_325345_20_desember_1998_nchest_amp_all_n_2022_14_05_22_10_15_05_nproyeksi_1_n_non_hospital_fuji_film_corporation_acc41p3327_nsrs_1001_img_1001"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/bariol_bold"
+                            android:text="@string/irwan_setiawan_n_325345_20_desember_1998_nchest_amp_all_n_2022_14_05_22_10_15_05_nproyeksi_1_n_non_hospital_fuji_film_corporation_acc41p3327_nsrs_1001_img_1001"
+                           />
                     </androidx.cardview.widget.CardView>
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -142,26 +142,35 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginTop="90dp"
                     android:fontFamily="@font/bariol_bold"
                     android:textStyle="bold"
                     android:textSize="20dp"
                     android:text="Riwayat /Hasil Radiologi"/>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/btn_viewlog"
+                    android:id="@+id/btn_hasil2"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
-                    android:layout_marginTop="320dp"
-                    app:cardElevation="1dp"
-                    android:onClick="lihatdokter"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="370dp"
+                    app:cardElevation="10dp"
+                    android:onClick="lihatrado"
                     app:cardCornerRadius="7dp"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginRight="40dp">
+                    app:cardBackgroundColor="@color/teal_200"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
 
-                    <ImageView
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:scaleType="fitXY"/>
+                        android:text="Lihat Hasil Radiologi"
+                        android:fontFamily="@font/bariol_bold"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textSize="18dp">
+
+                    </TextView>
 
                 </androidx.cardview.widget.CardView>
 

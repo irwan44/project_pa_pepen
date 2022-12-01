@@ -19,7 +19,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            app:cardBackgroundColor="#01AEBF"
+            app:cardBackgroundColor="#0EBE7F"
             android:layout_height="match_parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -71,7 +71,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:gravity="center"
-                android:background="#01AEBF">
+                android:background="#0EBE7F">
 
                 <ImageView
                     android:layout_width="200dp"
@@ -94,7 +94,7 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="52dp"
-                    app:cardBackgroundColor="#01AEBF">
+                    app:cardBackgroundColor="#0EBE7F">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -301,6 +301,7 @@
                 android:textStyle="bold" />
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/hasil"
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
                 app:cardElevation="1dp"

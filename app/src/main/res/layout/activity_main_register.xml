@@ -56,7 +56,6 @@
         android:layout_marginEnd="35dp"
         android:background="@drawable/border_red"
         android:fontFamily="@font/bariol_bold"
-        android:textColorHint="@color/white"
         app:endIconMode="clear_text"
         app:helperText="Masukkan Nama Lengkap"
         app:layout_constraintEnd_toEndOf="parent"
@@ -70,7 +69,6 @@
             android:layout_width="match_parent"
             android:layout_height="52dp"
             android:layout_marginLeft="10dp"
-            android:textColor="@color/white"
             android:background="@android:color/transparent"
             android:fontFamily="@font/bariol_bold"
             android:hint="Masukkan Nama Lengkap"
@@ -85,7 +83,6 @@
         android:layout_marginEnd="35dp"
         android:background="@drawable/border_red"
         android:fontFamily="@font/bariol_bold"
-        android:textColorHint="@color/white"
         app:endIconMode="clear_text"
         app:helperText="Alamat Lengkap"
         app:layout_constraintEnd_toEndOf="parent"
@@ -98,7 +95,6 @@
             android:layout_width="match_parent"
             android:layout_height="52dp"
             android:layout_marginLeft="10dp"
-            android:textColor="@color/white"
             android:background="@android:color/transparent"
             android:fontFamily="@font/bariol_bold"
             android:hint="Alamat Lengkap"
@@ -114,7 +110,6 @@
                 android:layout_marginEnd="35dp"
                 android:background="@drawable/border_red"
                 android:fontFamily="@font/bariol_bold"
-                android:textColorHint="@color/white"
                 app:endIconMode="clear_text"
                 app:helperText="Masukan Email"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -130,7 +125,6 @@
                     android:background="@android:color/transparent"
                     android:fontFamily="@font/bariol_bold"
                     android:hint="Masukan Email"
-                    android:textColor="@color/white"
                     android:inputType="textEmailAddress" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -143,7 +137,6 @@
                 android:layout_marginEnd="35dp"
                 android:background="@drawable/border_red"
                 android:fontFamily="@font/bariol_bold"
-                android:textColorHint="@color/white"
                 app:endIconMode="clear_text"
                 app:helperText="Masukan No. HP"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -159,7 +152,6 @@
                     android:background="@android:color/transparent"
                     android:fontFamily="@font/bariol_bold"
                     android:hint="Masukan No. HP"
-                    android:textColor="@color/white"
                     android:inputType="phone" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -173,7 +165,6 @@
                 android:layout_marginEnd="35dp"
                 android:background="@drawable/border_red"
                 android:fontFamily="@font/bariol_bold"
-                android:textColorHint="@color/white"
                 app:helperText="Buat Password"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -190,7 +181,6 @@
                     android:background="@android:color/transparent"
                     android:fontFamily="@font/bariol_bold"
                     android:hint="Buat Password"
-                    android:textColor="@color/white"
                     android:inputType="textPassword"/>
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -203,7 +193,6 @@
                 android:layout_marginEnd="35dp"
                 android:background="@drawable/border_red"
                 android:fontFamily="@font/bariol_bold"
-                android:textColorHint="@color/white"
                 app:helperText="Confirm Password"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -218,7 +207,6 @@
                     android:layout_marginLeft="10dp"
                     android:background="@android:color/transparent"
                     android:fontFamily="@font/bariol_bold"
-                    android:textColor="@color/white"
                     android:hint="Confirm Password"
                     android:inputType="textPassword"/>
 

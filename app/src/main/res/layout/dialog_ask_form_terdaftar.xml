@@ -51,7 +51,6 @@
             android:layout_marginEnd="35dp"
             android:background="@drawable/border_red"
             android:fontFamily="@font/bariol_bold"
-            android:textColorHint="@color/white"
             app:endIconMode="clear_text"
             app:helperText="Masukkan Nama Lengkap"
             app:layout_constraintEnd_toEndOf="parent"
@@ -68,8 +67,7 @@
                 android:background="@android:color/transparent"
                 android:fontFamily="@font/bariol_bold"
                 android:hint="Masukkan Nama Lengkap"
-                android:inputType="textPersonName"
-                android:textColor="@color/white" />
+                android:inputType="textPersonName"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -80,7 +78,6 @@
             android:layout_marginEnd="35dp"
             android:background="@drawable/border_red"
             android:fontFamily="@font/bariol_bold"
-            android:textColorHint="@color/white"
             app:endIconMode="clear_text"
             app:helperText="Masukkan Nama Lengkap"
             app:layout_constraintEnd_toEndOf="parent"
@@ -96,8 +93,7 @@
                 android:background="@android:color/transparent"
                 android:fontFamily="@font/bariol_bold"
                 android:hint="Masukkan Nama Lengkap"
-                android:inputType="textPersonName"
-                android:textColor="@color/white" />
+                android:inputType="textPersonName" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView

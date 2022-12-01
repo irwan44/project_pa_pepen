@@ -102,6 +102,7 @@ public class MainPendafOnline extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 dial_cari.show();
+                dial_bpjs.dismiss();
 
 
             }
